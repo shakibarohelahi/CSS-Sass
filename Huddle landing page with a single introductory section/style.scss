@@ -1,0 +1,121 @@
+:root {
+  --purple: #674bb0;
+  --white: #fff;
+  --font: "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--purple) url("bg-desktop.svg") no-repeat center center;
+  background-size: cover;
+  color: var(--white);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.right,
+.left {
+  max-width: 800px;
+}
+
+.logo {
+  width: 10rem;
+  margin-bottom: 1rem;
+  height: 50px;
+}
+
+.illustration {
+  width: 700px;
+  height: 450px;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: var(--white);
+  color: var(--purple);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  body {
+    background: var(--purple) url("bg-mobile.svg") no-repeat center center;
+    background-size: cover;
+ }
+  
+  .container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .illustration {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+
+  .icons {
+    position: initial;
+    display: flex;
+    justify-content: center;
+  }
+}
