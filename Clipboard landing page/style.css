@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("bg-header-desktop.png") no-repeat top center;
+  background-size: contain;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+.Introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.Introduction .title {
+  font-size: 20px;
+}
+.Introduction .subtitle {
+  font-size: 10px;
+  color: #c4c6c7;
+}
+
+.text-title {
+  font-size: 15px;
+}
+
+.text-under {
+  font-size: 7px;
+  color: #c4c6c7;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.choose-device {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.choose-device #btn-l {
+  background-color: #25bca5;
+  box-shadow: 1px 1px 1px 1px #1c8d7c;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 30px;
+  font-size: 10px;
+}
+.choose-device #btn-r {
+  background-color: #5f76f8;
+  box-shadow: 1px 1px 1px 1px #3f50a7;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 30px;
+  font-size: 10px;
+}
+
+.snippets {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+}
+.snippets .left-content img {
+  width: 300px;
+  height: 200px;
+}
+
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+.access .device-img {
+  display: flex;
+  justify-content: center;
+}
+.access .device-img img {
+  width: 300px;
+  height: auto;
+}
+
+.supercharge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.supercharge .superchange-row1 {
+  display: flex;
+  gap: 50px;
+}
+.supercharge .superchange-row1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 20px;
+  height: 20px;
+}
+.supercharge .logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}
+.supercharge .logo-brand {
+  margin: 40px 0;
+}
+.supercharge .logo-brand img {
+  width: 70px;
+}
+
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.last-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #f5f6f8;
+  gap: 20px;
+}
+.last-container .lastlogo {
+  display: flex;
+  justify-content: center;
+}
+.last-container img {
+  width: 20px;
+  height: 20px;
+}
+.last-container h5 {
+  font-size: 10px;
+  color: #7e7e7e;
+}
+.last-container .icons {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 468px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .snippets,
+  .accessr,
+  .supercharge,
+  .clipboard,
+  .last-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .snippets .title,
+  .accessr .title,
+  .supercharge .title,
+  .clipboard .title,
+  .last-container .title {
+    font-size: 30px;
+  }
+  .snippets .subtitle,
+  .accessr .subtitle,
+  .supercharge .subtitle,
+  .clipboard .subtitle,
+  .last-container .subtitle {
+    font-size: 1em;
+    color: #c4c6c7;
+  }
+  .text-title {
+    font-size: 20px;
+  }
+  .text-under {
+    font-size: 1em;
+  }
+  img {
+    margin-top: 30px;
+  }
+  .choose-device {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .choose-device #btn-l,
+  .choose-device #btn-r {
+    height: 50px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  .snippets .left-content img {
+    max-width: 300px;
+  }
+  .device-img img {
+    width: 300px;
+  }
+  .supercharge .superchange-row1,
+  .supercharge .logo-brand {
+    flex-direction: column;
+  }
+  .supercharge .superchange-row1 img {
+    width: 50px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .supercharge .logo-brand img {
+    width: 150px;
+    height: 50px;
+    gap: 10px;
+  }
+  .last-container {
+    height: 100vh;
+  }
+  .last-container h5 {
+    font-size: 14px;
+  }
+  .last-container .icons img {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
