@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fafafa;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container header {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+}
+.container header span {
+  font-weight: 300;
+  font-size: 36px;
+}
+.container header span,
+.container header h2,
+.container header p {
+  color: black;
+}
+.container header h1,
+.container header h2 {
+  font-size: 32px;
+  margin: 5px;
+}
+.container header p {
+  font-size: 14px;
+}
+.container .cards {
+  display: flex;
+  align-content: space-between;
+  gap: 60px;
+}
+.container .cards .card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 10px 10px 10px rgba(170, 170, 170, 0.2);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.container .cards .card .photo {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+}
+.container .cards .card h4 {
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+}
+.container .cards .card .parag {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.container .cards .middle-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+}
+.container .cards .around-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .cards .left-box .card {
+  border-top: 3px solid rgb(93, 225, 230);
+}
+.container .cards .middle-col .card {
+  border-top: 3px solid rgb(201, 36, 36);
+}
+.container .cards .right-box .card {
+  border-top: 3px solid rgb(12, 59, 160);
+}
+.container .cards .lowermiddle-col .card {
+  border-top: 3px solid rgb(250, 192, 86);
+}/*# sourceMappingURL=style.css.map */
