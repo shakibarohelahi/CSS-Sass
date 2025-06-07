@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Front-end Mentor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-card">
+        <span class="logo">
+          <img src="logo.svg" alt="logo" />
+        </span>
+
+        <div class="icon-group">
+          <span>
+            <img class="icons" src="icon-document.svg" alt="doc" />
+          </span>
+
+          <span>
+            <img class="icons" src="icon-folder.svg" alt="folder" />
+          </span>
+
+          <span>
+            <img class="icons" src="icon-upload.svg" alt="upload" />
+          </span>
+        </div>
+      </div>
+      <div class="box-right">
+        <div class="text-box">
+          <h3>You've used <b>815GB</b> of your storage</h3>
+        </div>
+        <div>
+          <div class="tooltip">
+            <span class="tooltiptext">
+              <h1>185</h1>
+              <h2>GB LEFT</h2>
+            </span>
+            <input
+              type="range"
+              class="slider"
+              min="0"
+              max="100"
+              value="80"
+              id="myRange"
+            />
+          </div>
+
+          <span class="counter">
+            <h4>0GB</h4>
+            <h4>1000GB</h4>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
